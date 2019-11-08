@@ -16,7 +16,7 @@ console.log('SmurfsListProps', props)
     }
     
     return (
-        <div>
+        <div className='listContainer'>
             {props.error && <p>{props.error}</p>}
             {props.smurfs.map(smurf => (
                 <Smurf  key={smurf.id} smurf={smurf} />

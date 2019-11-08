@@ -10,8 +10,10 @@ const App = () => {
         <h1>SMURFS</h1>
         <img src={ require('../assets/smurfs-vector.png') }/>
       </header>
-      <AddSmurfForm />
-      <SmurfsList />
+      <div className="contentContainer">
+        <AddSmurfForm />
+        <SmurfsList />
+      </div>
     </div>
   )
 }

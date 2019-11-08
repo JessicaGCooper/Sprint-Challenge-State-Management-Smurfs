@@ -25,24 +25,24 @@ const AddSmurfForm = props => {
         <div className="fieldContainer">
             <div className="name">
               <label htmlFor="name"><h3>Name</h3></label>
-              <div className="nameInputContainer">
-                <input onChange={onNameChange} type="name" name="name" placeholder="Smurf Name" size="45"/>
+              <div className="inputContainer">
+                <input onChange={onNameChange} type="name" name="name" placeholder="Smurf Name" size="30"/>
               </div>
             </div>
         </div>
         <div className="fieldContainer">
             <div className="age">
               <label htmlFor="age"><h3>Age</h3></label>
-              <div className="ageInputContainer">
-                <input onChange={onAgeChange} type="age" name="age" placeholder="Smurf Age" size="45"/>
+              <div className="inputContainer">
+                <input onChange={onAgeChange} type="age" name="age" placeholder="Smurf Age" size="30"/>
               </div>
             </div>
         </div>
         <div className="fieldContainer">
             <div className="height">
               <label htmlFor="height"><h3>Height</h3></label>
-              <div className="heightInputContainer">
-                <input onChange={onHeightChange} type="height" name="height" placeholder="Smurf Height" size="45"/>
+              <div className="inputContainer">
+                <input onChange={onHeightChange} type="height" name="height" placeholder="Smurf Height" size="30"/>
               </div>
             </div>
         </div>
