@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Catamaran|Vollkorn&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: #224de3;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #88CCFF;
+  height: 100px;
+  border-bottom: 2px dashed white;
+
+  h1 {
+    font-size: 4rem;
+    font-family: 'Acme', sans-serif;
+    color: white;
+  }
+}
+
+
+// font-family: 'Acme', sans-serif;
+// font-family: 'Catamaran', sans-serif;
+// font-family: 'Vollkorn', serif;
