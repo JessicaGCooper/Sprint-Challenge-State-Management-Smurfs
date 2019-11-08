@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css?family=Acme|Catamaran|Vollkorn&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: #224de3;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #88CCFF;
+  height: 140px;
+  border-bottom: 2px dashed white;
+
+  h1 {
+    font-size: 4rem;
+    font-family: 'Acme', sans-serif;
+    color: white;
+  }
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+}
+
+.listContainer {
+  width: 50%;
+}
+
+.smurfContainer {
+    width: 30%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+
+  h1 {
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+    color: #224de3;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: 'Acme', sans-serif;
+    color: #e53e3a;
+    margin: 0;
+  }
+}
+
+.logInForm {
+    width: 26%;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    height: 400px;
+
+    h1 {
+      font-size: 2rem;
+      font-family: 'Acme', sans-serif;
+      color: #224de3;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      padding-left: 20px;
+      padding-bottom: 2px;
+      padding-top: 10px;
+      font-family: 'Catamaran', sans-serif;
+      color: #e53e3a;
+      margin: 0;
+    }
+
+    .inputContainer {
+      padding-left: 20px;
+
+      input {
+        font-size: 1rem;
+        padding: 4px;
+      }
+    }
+
+
+    button {
+      margin: 20px;
+      font-size: 1rem;
+      font-family: 'Catamaran', sans-serif;
+      color: #e53e3a;
+      border: 2px solid  #e53e3a;
+      border-radius: 5px;
+    }
+}
+
+// font-family: 'Acme', sans-serif;
+// font-family: 'Catamaran', sans-serif;
+// font-family: 'Vollkorn', serif;
