@@ -15,7 +15,7 @@ const AddSmurfForm = props => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        props.postSmurf(name, age, height)
+        props.postSmurf(name, age, height);
     }
 
     return (
