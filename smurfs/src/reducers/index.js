@@ -42,12 +42,6 @@ export const smurfsReducer = (state = initialState, {type, payload}) => {
                 isFetching: false,
                 error: payload
             };
-        
-      
-            // return { 
-            //     ...state,
-            //     smurfs: [...state.smurfs, newSmurf]
-            // };
         case POST_SMURFS_START:
             return {
                 ...state,

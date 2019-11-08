@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
+import { connect } from 'react-redux';
 
-//form onSubmit to create new smurf?
-//need button onClick to make post request
+import { postSmurf } from '../actions'
 
 const AddSmurfForm = props => {
 
@@ -14,9 +14,8 @@ const AddSmurfForm = props => {
     const onHeightChange = e => {setHeight(e.target.value)}
 
     const handleSubmit = e => {
-        const newSmurf = {name: name, age: age, height: height, id: Date.now()}
         e.preventDefault();
-        props.postSmurf(newSmurf)
+        props.postSmurf(name, age, height)
     }
 
     return (
