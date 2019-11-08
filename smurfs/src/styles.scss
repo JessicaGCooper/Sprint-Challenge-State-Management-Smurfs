@@ -9,12 +9,19 @@ body {
   background: #224de3;
 }
 
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 header {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #88CCFF;
-  height: 100px;
+  height: 140px;
   border-bottom: 2px dashed white;
 
   h1 {
@@ -24,6 +31,33 @@ header {
   }
 }
 
+.smurfContainer {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+
+  h1 {
+    font-size: 2rem;
+    font-family: 'Acme', sans-serif;
+    color: #224de3;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: 'Acme', sans-serif;
+    color: #e53e3a;
+    margin: 0;
+  }
+}
 
 // font-family: 'Acme', sans-serif;
 // font-family: 'Catamaran', sans-serif;

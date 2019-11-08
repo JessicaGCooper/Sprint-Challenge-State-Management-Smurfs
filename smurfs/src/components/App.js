@@ -1,11 +1,15 @@
 import React from 'react'
 
+import SmurfsList from './SmurfsList'
+
 const App = () => {
   return (
-    <div>
+    <div className='appContainer'>
       <header>
-        <h1>start in your index.js file</h1>
+        <h1>SMURFS</h1>
+        <img src={ require('../assets/smurfs-vector.png') }/>
       </header>
+      <SmurfsList />
     </div>
   )
 }

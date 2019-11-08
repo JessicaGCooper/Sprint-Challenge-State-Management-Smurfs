@@ -6,7 +6,7 @@ import thunk from 'redux-thunk';
 
 import "./styles.scss";
 import App from "./components/App";
-import smurfsReducer from './reducers';
+import { smurfsReducer } from './reducers';
 
 
 const store = createStore(smurfsReducer, applyMiddleware(thunk))
