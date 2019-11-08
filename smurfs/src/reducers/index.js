@@ -7,7 +7,12 @@ import {
 const initialState = {
     smurfs: [],
     isFetching: false,
-    error: ''
+    error: '',
+    smurf: {
+        name: '',
+        age: '',
+        height: ''
+    },
 }
 
 export const smurfsReducer = (state = initialState, {type, payload}) => {
