@@ -1,4 +1,5 @@
 import axios from 'axios';
+import AddSmurfForm from '../components/AddSmurfForm';
 
 export const FETCH_SMURFS_START = 'FETCH_SMURFS_START';
 export const FETCH_SMURFS_SUCCESS = 'FETCH_SMURFS_SUCCESS';
@@ -23,4 +24,16 @@ export const POST_SMURFS_START = 'POST_SMURFS_START';
 export const POST_SMURFS_SUCCESS = 'POST_SMURFS_SUCCESS';
 export const POST_SMURFS_FAILURE = 'POST_SMURFS_FAILURE';
 
-
+export const postSmurf = (newSmurf) => dispatch => {
+    dispatch({ type: POST_SMURFS_START })
+    axios
+        .post('http://localhost:3333/smurfs', { newSmurf })///what???
+        .then( res => {
+            console.log(res)
+            dispatch({ type: POST_SMURFS_SUCCESS, payload: res.data });
+        })
+        .catch( err => {
+            console.log('error', err);
+            dispatch({ type: POST_SMURFS_FAILURE, payload: err.response })
+        });
+}
